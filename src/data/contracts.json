@@ -1,0 +1,7 @@
+[
+  { "id": "prime_hot", "text": "Extract with the Prime cube at heat 60 or more" },
+  { "id": "no_damage", "text": "Extract without taking a single hit" },
+  { "id": "big_bag", "text": "Extract with 8 or more cubes" },
+  { "id": "greedy", "text": "Extract at GREED x1.5 or higher" },
+  { "id": "rares", "text": "Extract with 3 Rare cubes" }
+]

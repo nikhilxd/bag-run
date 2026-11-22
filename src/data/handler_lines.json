@@ -1,0 +1,104 @@
+{
+  "pre": [
+    "Bag's empty. Keep it that way for about four seconds.",
+    "Doors are open. Hunters are not far behind.",
+    "Beacon opens at 20. What you do with that is your problem.",
+    "Cubes are heavier than they look.",
+    "I don't care how much you carry. I care how much you bring back.",
+    "Listen for the heat. It only goes one way.",
+    "New map. Same rules. Don't get cute.",
+    "Green is small money. Gold is the reason we're here.",
+    "Move first. Count later."
+  ],
+  "pre_cautious": [
+    "Easy. Get in, get out.",
+    "Rough few runs. Take the first beacon and breathe.",
+    "Small bag, big smile. We'll build from there.",
+    "You're losing bags. I'm giving you a few extra seconds before they show up.",
+    "Nobody ever lost money by leaving early. Just saying."
+  ],
+  "pre_greedy": [
+    "You like it hot. So do they.",
+    "You keep staying. I noticed. So did the Sniper.",
+    "Long stays pay well. They also end badly. Your call.",
+    "I've moved a Sniper up for you. You're welcome."
+  ],
+  "pre_bored": [
+    "You're getting out too clean. Gold is worth more this time. Stay longer.",
+    "Every run, same exit time. Try being late once.",
+    "Safe is fine. Safe is also a smaller number."
+  ],
+  "pre_streak": [
+    "Day {n} on the contract. Don't break it for a cube.",
+    "{n} days in a row. The hunters are starting to take it personally.",
+    "Streak: {n}. It's only worth something if you keep it."
+  ],
+  "extract": [
+    "Out. Count it.",
+    "That's a good bag. Don't let it go to your head.",
+    "Clean exit.",
+    "Made it. Barely, but that counts.",
+    "They'll be angry about that one.",
+    "You walked away. Most don't.",
+    "Fine. Again."
+  ],
+  "extract_greedy": [
+    "That's the stay I was talking about. Nice.",
+    "You waited, you got paid. Remember how that felt.",
+    "Greed paid out. This time."
+  ],
+  "extract_low": [
+    "Out with almost nothing. I'll allow it.",
+    "A light bag still counts. Barely.",
+    "You left money on the floor."
+  ],
+  "extract_hurt": [
+    "One hit left. You like it close.",
+    "You're bleeding on my floor. Fine, but you made it.",
+    "That was 1 HP. Don't tell me you planned it."
+  ],
+  "death_drone": [
+    "Drones. Drones got you.",
+    "Chased down by the cheapest thing on the map.",
+    "They're fast. Your bag is slow. That's the whole game.",
+    "Too many cubes, too few exits."
+  ],
+  "death_brute": [
+    "The Brute hits hard and you let it close. Learn the pattern.",
+    "Don't stand next to the big one.",
+    "Heavy bag, heavy hitter. Bad pairing."
+  ],
+  "death_sniper": [
+    "You saw the laser. You walked into it anyway.",
+    "Move on the red line, not after it.",
+    "That Sniper's still out there. Bounty x2 on Snipers tomorrow."
+  ],
+  "death_any": [
+    "Bag's gone. That's the price.",
+    "You lost it. Remember what you were thinking right before.",
+    "Scrap's yours. The rest isn't.",
+    "Everyone loses a bag. Most learn the first time."
+  ],
+  "grudge": [
+    "That {type} is still out there. Bounty x2 today.",
+    "Yesterday's {type} has a crown now. Go collect.",
+    "The {type} that got you is marked. Double bounty."
+  ],
+  "courier_sealed": [
+    "Crate's sealed. Courier brings it at midnight.",
+    "Something's coming tomorrow. Don't miss it.",
+    "Courier's on the way. Come back and open it."
+  ],
+  "courier_open": [
+    "Crate's open. Dash and one insured slot. Use them.",
+    "Told you. Dash is yours, plus a safety net for one cube."
+  ],
+  "contract_done": [
+    "Contract done. Cash is in your account.",
+    "Daily cleared. Smoke gadget is yours now.",
+    "That's the contract. Good."
+  ],
+  "no_upgrade": [
+    "You're sitting on cash. Go buy something."
+  ]
+}
