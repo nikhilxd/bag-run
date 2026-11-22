@@ -2,7 +2,7 @@ import Phaser from 'phaser';
 import { state, persist } from '../state';
 import { W, H, FONT, text, button } from '../ui';
 import { directorFor, pickLine, preRunTag } from '../systems/handler';
-import { dailyContract, dailyKey, dailyDone, courierReady, openCourier } from '../systems/meta';
+import { dailyContract, dailyKey, dailyDone, courierReady, openCourier, grudgeActive } from '../systems/meta';
 import { fmtHMS, gameNow, nextUtcMidnight } from '../systems/save';
 import { track } from '../systems/telemetry';
 import { beep } from '../audio';
@@ -22,7 +22,8 @@ export class Title extends Phaser.Scene {
 
     const d = directorFor(s.profile);
     const tag = preRunTag(d, s.daily.streak);
-    const line = s.runsTotal === 0 ? 'First job. Grab what shines, then find the green ring. Do not stay long.' : pickLine({ tag });
+    const gr = grudgeActive(s);
+    const line = s.runsTotal === 0 ? 'First job. Grab what shines, then find the green ring. Do not stay long.' : gr ? pickLine({ tag: 'grudge', vars: { type: gr } }) : pickLine({ tag, vars: { n: s.daily.streak } });
     this.add.rectangle(W / 2, 190, W - 40, 80, 0x1c1c26).setStrokeStyle(2, 0x455a64);
     text(this, 40, 160, 'HANDLER', 11, '#69f0ae', 0);
     text(this, W / 2, 196, line, 15, '#eceff1');

@@ -13,7 +13,7 @@
   "pre_cautious": [
     "Easy. Get in, get out.",
     "Rough few runs. Take the first beacon and breathe.",
-    "Small bag, big smile. We'll build from there.",
+    "A small bag is a fine start. We build from there.",
     "You're losing bags. I'm giving you a few extra seconds before they show up.",
     "Nobody ever lost money by leaving early. Just saying."
   ],
@@ -24,7 +24,7 @@
     "I've moved a Sniper up for you. You're welcome."
   ],
   "pre_bored": [
-    "You're getting out too clean. Gold is worth more this time. Stay longer.",
+    "You are getting out too clean. Gold pays more this time. Stay a bit longer.",
     "Every run, same exit time. Try being late once.",
     "Safe is fine. Safe is also a smaller number."
   ],
@@ -54,11 +54,11 @@
   ],
   "extract_hurt": [
     "One hit left. You like it close.",
-    "You're bleeding on my floor. Fine, but you made it.",
+    "You are bleeding on my floor. Fine, you made it.",
     "That was 1 HP. Don't tell me you planned it."
   ],
   "death_drone": [
-    "Drones. Drones got you.",
+    "Out-run by a drone. With a full bag that is no surprise.",
     "Chased down by the cheapest thing on the map.",
     "They're fast. Your bag is slow. That's the whole game.",
     "Too many cubes, too few exits."
@@ -71,13 +71,13 @@
   "death_sniper": [
     "You saw the laser. You walked into it anyway.",
     "Move on the red line, not after it.",
-    "That Sniper's still out there. Bounty x2 on Snipers tomorrow."
+    "That Sniper is still out there. Bounty x2 on Snipers tomorrow."
   ],
   "death_any": [
     "Bag's gone. That's the price.",
     "You lost it. Remember what you were thinking right before.",
     "Scrap's yours. The rest isn't.",
-    "Everyone loses a bag. Most learn the first time."
+    "Everyone loses a bag. Better now than with a big one."
   ],
   "grudge": [
     "That {type} is still out there. Bounty x2 today.",
