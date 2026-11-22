@@ -54,6 +54,7 @@ export class Run extends Phaser.Scene {
   private hp = 3;
   private maxHp = 3;
   private t = 0;
+  private dtNow = 0.016;
   private invuln = 0;
   private fireCd = 0;
   private bounty = 0;
@@ -326,7 +327,7 @@ export class Run extends Phaser.Scene {
   update(_time: number, delta: number) {
     if (this.ending) return;
     const dt = Math.min(delta / 1000, 0.05);
-    this.t += dt;
+    this.t += dt; this.dtNow = dt;
     this.invuln = Math.max(0, this.invuln - dt);
     this.dashCd = Math.max(0, this.dashCd - dt);
     this.player.setAlpha(this.invuln > 0 && Math.floor(this.t * 20) % 2 ? 0.35 : 1);
@@ -423,10 +424,10 @@ export class Run extends Phaser.Scene {
       if (this.extractFill > 0) this.beaconG.fillStyle(0x69f0ae, 0.55).fillCircle(b.x, b.y, 55 * this.extractFill);
       const inside = Math.hypot(this.player.x - b.x, this.player.y - b.y) < 55;
       if (inside) {
-        this.extractFill += (1 / 3) * Math.min(this.game.loop.delta / 1000, 0.05);
+        this.extractFill += (1 / 3) * this.dtNow;
         if (Math.floor(this.t * 10) % 3 === 0) beep(300 + this.extractFill * 500, 0.04, 'sine', 0.03);
         if (this.extractFill >= 1) this.finish(true);
-      } else this.extractFill = Math.max(0, this.extractFill - 2 * Math.min(this.game.loop.delta / 1000, 0.05));
+      } else this.extractFill = Math.max(0, this.extractFill - 2 * this.dtNow);
     } else if (state.save.upgrades.scanner >= 3 && this.nextBeacon.at - this.t <= 5) {
       this.beaconG.lineStyle(3, 0x69f0ae, 0.35).strokeCircle(this.nextBeacon.x, this.nextBeacon.y, 55);
     }
