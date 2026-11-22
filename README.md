@@ -29,3 +29,12 @@ npm run build
 ```
 
 Phaser 3 + TypeScript + Vite. No backend, no API keys, one localStorage key (`bagrun.save.v1`).
+
+## AI use
+
+Claude Opus wrote the plan. Claude Sonnet in Claude Code wrote the code, tests, Handler line bank and first drafts of the writeups. Nikhil Dhamjevar set the concept, targets and honesty rules and edited the drafts. No AI model runs inside the game. The full log, including where the AI got things wrong, is in [ai_log.md](ai_log.md); the unedited first draft of the Q3 Duo section is in [ai_drafts/](ai_drafts/).
+
+## Notes
+
+- No outside player has tested this build. Run numbers in `playtests/` come from a bot sim, not human data.
+- The written test answers (Q1 writeup, Q2 strategy, Q3 feature spec) are submitted separately as PDFs.
